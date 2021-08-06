@@ -1,0 +1,14 @@
+public class Conta{
+	
+	double saldo;
+	int    agencia = 39; 
+	int    numero;
+	String titular;
+
+	public void Depositar(double valor){
+		
+		
+		
+	}
+	
+}

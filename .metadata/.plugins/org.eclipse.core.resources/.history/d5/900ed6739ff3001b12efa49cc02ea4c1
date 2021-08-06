@@ -1,0 +1,12 @@
+
+public class TestaMetodo {
+	
+	public static void main(String[] args) {
+		
+		Conta contaUm =  new Conta();
+		
+		contaUm.Depositar(200.35);
+		
+	}
+
+}

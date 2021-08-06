@@ -1,0 +1,28 @@
+
+public class TestaMetodo {
+	
+	public static void main(String[] args) {
+		
+		Conta contaUm =  new Conta();
+		
+		contaUm.depositar(200);
+		
+		System.out.println(contaUm.saldo);
+		
+		
+		boolean conseguio = contaUm.sacar(90);
+		
+		if(conseguio){
+			
+			System.out.println("Saque realizado");
+			
+		}else{
+			
+			System.out.println("Algo deu errado");
+			
+		}
+		
+		
+	}
+
+}
