@@ -1,4 +1,4 @@
-package e;
+package Bytebank;
 
 public class TesteBanco {
 
@@ -19,7 +19,7 @@ public class TesteBanco {
 		
 		contaRaian.titular = raian;
 		
-		System.out.println(contaRaian.titular.profissao);
+		System.out.println(contaRaian.titular.nome);
 		
 	}
 	
