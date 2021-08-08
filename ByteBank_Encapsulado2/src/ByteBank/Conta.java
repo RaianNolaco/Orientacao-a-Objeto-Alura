@@ -2,9 +2,9 @@ package ByteBank;
 public class Conta{
 	
 	private double saldo;
-	int    agencia; 
-	int    numero;
-	Cliente titular = new Cliente();
+	private int    agencia; 
+	private int    numero;
+	private Cliente titular = new Cliente();
 
 	public void depositar(double valor){
 		
