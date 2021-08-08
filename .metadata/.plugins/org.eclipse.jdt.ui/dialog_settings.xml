@@ -37,4 +37,6 @@
 	<section name="NewPackageWizardPage">
 		<item key="create_package_info_java" value="false"/>
 	</section>
+	<section name="RenameInformationPopup">
+	</section>
 </section>
