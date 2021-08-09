@@ -5,8 +5,8 @@ public class Conta {
 	private double saldo;
 	private int agencia;
 	private int numero;
-	private Cliente titular = new Cliente();
-
+	//private Cliente titular = new Cliente();
+	private Cliente titular;
 	
 	
 	//Saldo
@@ -48,16 +48,21 @@ public class Conta {
 		
 	}
 	
+	public boolean criarCliente(String nome){
+		
+		Cliente cliente = new Cliente();
+	    cliente.setNome(nome);
+	    
+		return true;
+		
+	}
+	
 	public void setTitular(Cliente titular) {
-	
-		this.titular = titular;
-	
+		this.titular =  titular;		
 	}
 
 	public void depositar(double valor) {
-
 		this.saldo += valor;
-
 	}
 
 	public boolean sacar(double valor) {

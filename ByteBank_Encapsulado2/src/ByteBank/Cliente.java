@@ -2,10 +2,25 @@ package ByteBank;
 
 public class Cliente {
 
-	String nome;
-	String cpf;
-	String profissao;
-	Endereco endereco = new Endereco();
+	private String nome;
+	private String cpf;
+	private String profissao;
+	private Endereco endereco = new Endereco();
 	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setCpf(String cpf){
+		this.cpf = cpf;	
+	}
+	
+	public String getCpf(){
+		return cpf;
+	}	
 	
 }

@@ -12,6 +12,10 @@ public class TestaGetSet {
 		conta.setNumero(123321);
 		System.out.println(conta.getNumero());
 		
+		//conta.titular = "Raian";
+		conta.criarCliente("Raian");
+		
+		System.out.println(conta.getTitular());
 	}
 	
 }
