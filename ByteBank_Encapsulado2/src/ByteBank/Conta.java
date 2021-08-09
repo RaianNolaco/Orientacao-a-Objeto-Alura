@@ -9,12 +9,13 @@ public class Conta {
 
 	
 	
-	
+	//Saldo
 	public double getSaldo() {
 
 		return this.saldo;
 	}
 
+	//Agencia
 	public int getAgencia() {
 
 		return this.agencia;
@@ -25,6 +26,8 @@ public class Conta {
 		this.agencia = agencia;
 	}
 
+	
+	//Numero
 	public int getNumero() {
 
 		return this.numero;
@@ -35,6 +38,20 @@ public class Conta {
 
 		this.numero = numero;
 
+	}
+	
+	
+	//Titular
+	public Cliente getTitular(){
+		
+		return this.titular;
+		
+	}
+	
+	public void setTitular(Cliente titular) {
+	
+		this.titular = titular;
+	
 	}
 
 	public void depositar(double valor) {
