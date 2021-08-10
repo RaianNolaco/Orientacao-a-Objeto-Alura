@@ -48,12 +48,9 @@ public class Conta {
 		
 	}
 	
-	public boolean criarCliente(String nome){
+	public void setCliente(Cliente titular){
 		
-		Cliente cliente = new Cliente();
-	    cliente.setNome(nome);
-	    
-		return true;
+		this.titular= titular; 
 		
 	}
 	
