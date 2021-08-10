@@ -14,11 +14,15 @@ public class TestaGetSet {
 		
 		Cliente raian = new Cliente();
 		
+		raian.setNome("Raian");
+		
 		conta.setTitular(raian);
+		
+		System.out.println(conta.getTitular().getNome());
 		
 		conta.getTitular().setNome("Raian Medeiros");
 		
-		System.out.println(conta.getTitular().getNome());
+		System.out.println(raian.getNome());
 		
 		
 	}
