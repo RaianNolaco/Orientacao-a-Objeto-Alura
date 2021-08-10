@@ -23,4 +23,19 @@ public class Cliente {
 		return cpf;
 	}	
 	
+	public void setProfissao(String profissao){
+		this.profissao = profissao;	
+	}
+	
+	public String getProfissao(){
+		return profissao;
+	}
+	
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+	
+	public Endereco getEndereco() {
+		return endereco;
+	}
 }

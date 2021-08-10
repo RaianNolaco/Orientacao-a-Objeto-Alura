@@ -18,11 +18,13 @@ public class TestaGetSet {
 		
 		conta.setTitular(raian);
 		
-		System.out.println(conta.getTitular().getNome());
+		System.out.println(conta.getTitular() +"     "+conta.getTitular().getNome());
 		
 		conta.getTitular().setNome("Raian Medeiros");
 		
 		System.out.println(raian.getNome());
+		
+		conta.getTitular().setProfissao("Programador");
 		
 		
 	}
