@@ -7,6 +7,7 @@ public class Cliente {
 	private String profissao;
 	private Endereco endereco = new Endereco();
 	
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}

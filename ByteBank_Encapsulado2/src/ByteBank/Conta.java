@@ -8,6 +8,14 @@ public class Conta {
 	//private Cliente titular = new Cliente();
 	private Cliente titular;
 	
+	public Conta(int agencia,int numero){
+		
+		this.agencia = agencia;
+		this.numero  = numero;
+		
+		System.out.println("Conta criada!");
+		
+	}
 	
 	//Saldo
 	public double getSaldo() {
@@ -23,6 +31,11 @@ public class Conta {
 
 	public void setAgencia(int agencia) {
 
+		if(agencia <= 0){
+			
+			System.out.println("valores invalidos, não são permitidos valores nulos ou negativos");
+			return;
+		}	
 		this.agencia = agencia;
 	}
 
@@ -36,6 +49,11 @@ public class Conta {
 
 	public void setNumero(int numero) {
 
+		if(numero <= 0){
+			
+			System.out.println("valores invalidos, não são permitidos valores nulos ou negativos");
+			return;
+		}	
 		this.numero = numero;
 
 	}
