@@ -7,14 +7,16 @@ public class Conta {
 	private int numero;
 	//private Cliente titular = new Cliente();
 	private Cliente titular;
+	private static int total; 
 	
 	public Conta(int agencia,int numero){
 		
+		Conta.total++;
 		this.agencia = agencia;
 		this.numero  = numero;
 		
 		System.out.println("Conta criada!");
-		
+		System.out.println("O total de contas é " + total);
 	}
 	
 	//Saldo
@@ -111,6 +113,10 @@ public class Conta {
 			return false;
 
 		}
+	}
+	
+	public static int getTotal() {
+		return total;
 	}
 
 }

@@ -12,6 +12,11 @@ public class TestaValores {
 		
 		System.out.println(conta.getAgencia() + "\n"+ conta.getNumero());
 		
+		Conta conta2 = new Conta(12,4556);
+		Conta conta3 = new Conta(14,34534);
+		
+		System.out.println(Conta.getTotal());
+		
 	}
 
 }
