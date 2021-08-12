@@ -1,5 +1,0 @@
-INDEX VERSION 1.131+C:\Users\chave\OneDrive\Área de Trabalho\Orientacao_A_Objeto_alura\.metadata\.plugins\org.eclipse.jdt.core
-1013297399.index
-1346779289.index
-2350821206.index
-4166028822.index
