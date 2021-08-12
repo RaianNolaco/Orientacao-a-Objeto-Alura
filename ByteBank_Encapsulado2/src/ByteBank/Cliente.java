@@ -5,7 +5,19 @@ public class Cliente {
 	private String nome;
 	private String cpf;
 	private String profissao;
-	private Endereco endereco = new Endereco();
+	//private Endereco endereco; = new Endereco();
+	private Endereco endereco;
+	private static int qntCliente;
+	
+	public Cliente(String nome,String cpf){
+		
+		this.nome = nome;
+		this.cpf = cpf;
+		
+		System.out.println(nome + " seu perfil foi criado!!");
+		qntCliente++;
+		
+	}
 	
 
 	public void setNome(String nome) {
@@ -38,5 +50,9 @@ public class Cliente {
 	
 	public Endereco getEndereco() {
 		return endereco;
+	}
+	
+	public static int getQntCliente(){
+		return qntCliente;
 	}
 }

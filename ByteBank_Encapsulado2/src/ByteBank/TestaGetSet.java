@@ -4,7 +4,9 @@ public class TestaGetSet {
 
 	public static void main(String[] args) {
 		
-		Conta conta = new Conta(); 
+		Cliente raian = new Cliente("Raian Medeiros","52999655871");
+		
+		Conta conta = new Conta(123,123321,raian); 
 		
 		conta.setAgencia(133);
 		System.out.println(conta.getAgencia());
@@ -12,8 +14,7 @@ public class TestaGetSet {
 		conta.setNumero(123321);
 		System.out.println(conta.getNumero());
 		
-		Cliente raian = new Cliente();
-		
+	
 		raian.setNome("Raian");
 		
 		conta.setTitular(raian);

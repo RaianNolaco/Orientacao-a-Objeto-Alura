@@ -9,14 +9,23 @@ public class Conta {
 	private Cliente titular;
 	private static int total; 
 	
-	public Conta(int agencia,int numero){
+	public Conta(int agencia,int numero,Cliente titular){
 		
 		Conta.total++;
-		this.agencia = agencia;
-		this.numero  = numero;
+		if(agencia <= 0 || numero <= 0){
+			
+			System.out.println("valores invalidos, não são permitidos valores nulos ou negativos");
+			return;
+			
+		}else {
+			
+			this.agencia = agencia;
+			this.numero = numero;
+		}
 		
-		System.out.println("Conta criada!");
-		System.out.println("O total de contas é " + total);
+		this.titular = titular;
+		
+		System.out.println(this.titular.getNome() + " sua conta foi criada!");
 	}
 	
 	//Saldo
@@ -30,15 +39,17 @@ public class Conta {
 
 		return this.agencia;
 	}
-
+	
 	public void setAgencia(int agencia) {
-
-		if(agencia <= 0){
+		if(agencia <= 0 ){
 			
 			System.out.println("valores invalidos, não são permitidos valores nulos ou negativos");
 			return;
-		}	
-		this.agencia = agencia;
+			
+		}else {		
+			this.agencia = agencia;
+		}
+		
 	}
 
 	
@@ -48,18 +59,20 @@ public class Conta {
 		return this.numero;
 
 	}
-
+	
 	public void setNumero(int numero) {
-
 		if(numero <= 0){
 			
 			System.out.println("valores invalidos, não são permitidos valores nulos ou negativos");
 			return;
-		}	
-		this.numero = numero;
-
+			
+		}else {
+			
+			
+			this.numero = numero;
+		}
+		
 	}
-	
 	
 	//Titular
 	public Cliente getTitular(){

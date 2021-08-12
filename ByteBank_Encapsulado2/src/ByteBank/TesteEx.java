@@ -1,8 +1,5 @@
 package ByteBank;
 
-import java.util.*;
-
-
 import java.util.Scanner;
 
 public class TesteEx {
@@ -14,10 +11,10 @@ public class TesteEx {
 		int pos = 0; 
 		int neg = 0;
 		
+		Scanner sc = new Scanner(System.in);
+
 		for(int i = 1; i<= 5;i++){
-			
-			Scanner sc = new Scanner(System.in);
-			
+				
 			int x = sc.nextInt();
 
 			if(x >= 0){
@@ -27,7 +24,7 @@ public class TesteEx {
 			if(x % 2 == 0){
 				par+=1;
 			}else inp+=1;
-				
+	
 		}
 		
 		System.out.println("Valores Positivos: " + pos);
@@ -35,6 +32,7 @@ public class TesteEx {
 		System.out.println("Valores impares: "   + inp);
 		System.out.println("Valores pares: "     + par);
 		
+		sc.close();
 	}
 	
 }
